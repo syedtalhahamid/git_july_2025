@@ -14,7 +14,7 @@ def home():
 def posts():
     return render_template("posts.html")
 
-@app.route('/post/id/')
+@app.route('/post/id')
 def post():
     return render_template("post.html")
 
