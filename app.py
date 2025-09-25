@@ -26,6 +26,10 @@ def update_post():
 def del_post():
     return render_template("del_post.html")
 
+@app.route('/post/id')
+def get_post():
+    return render_template("post.html")
+
 if __name__=="__main__":
     app.run(host="127.0.0.1",port=5000)
 
