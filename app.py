@@ -18,6 +18,10 @@ def posts():
 def post():
     return render_template("post.html")
 
+@app.route('/post/id')
+def update_post():
+    return render_template("update_post.html")
+
 if __name__=="__main__":
     app.run(host="127.0.0.1",port=5000)
 
