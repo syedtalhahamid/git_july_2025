@@ -22,9 +22,6 @@ def post():
 def update_post():
     return render_template("update_post.html")
 
-@app.route('/post/id')
-def del_post():
-    return render_template("del_post.html")
 
 if __name__=="__main__":
     app.run(host="127.0.0.1",port=5000)
